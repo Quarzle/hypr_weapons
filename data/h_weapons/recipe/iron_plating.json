@@ -1,0 +1,31 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "equipment",
+	"pattern": [
+		"---",
+		"|||",
+		"---"
+	],
+	"key": {
+		"|": [
+			"minecraft:iron_ingot"
+		],
+		"-": [
+			"minecraft:iron_nugget"
+		]
+	},
+	"result": {
+		"id": "minecraft:command_block",
+		"count": 1,
+		"components": {
+			"minecraft:item_model": "minecraft:iron_plating",
+			"minecraft:custom_data": {
+				"hyper-item": "iron_plating"
+			},
+			"minecraft:item_name": {
+				"text": "Iron Plating"
+			},
+			"rarity": "uncommon"
+		}
+	}
+}

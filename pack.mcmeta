@@ -1,0 +1,19 @@
+{
+  "pack": {
+    "min_format":88,
+    "max_format":107.1,
+    "description": [
+      {
+        "text": "Quarzle's Hypr Weapons",
+        "color": "#56be4e"
+      },
+      {
+        "text": "\n"
+      },
+      {
+        "text": "1.0 for 26.2",
+        "color": "#908b8b"
+      }
+    ]
+  }
+}

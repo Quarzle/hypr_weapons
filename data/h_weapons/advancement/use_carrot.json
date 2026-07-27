@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"right_click": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"components": {
+						"minecraft:custom_data": {
+							"hypr-item": "super_carrot"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "h_weapons:carrot_effect"
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"group": "tnt",
+	"category": "redstone",
+	"pattern": [
+		"###",
+		"#v#",
+		"###"
+	],
+	"key": {
+		"#": [
+			"minecraft:dirt",
+			"minecraft:sand",
+			"minecraft:mud",
+			"minecraft:clay"
+		],
+		"v": [
+			"minecraft:test_block"
+		]
+	},
+	"result": {
+		"id": "minecraft:tnt"
+	}
+}

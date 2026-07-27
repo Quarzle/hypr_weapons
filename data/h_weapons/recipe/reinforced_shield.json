@@ -1,0 +1,50 @@
+{
+	"type": "minecraft:smithing_transform",
+	"base": "minecraft:shield",
+	"addition": "minecraft:command_block",
+	"result": {
+		"id": "minecraft:shield",
+		"components": {
+			"minecraft:max_damage": 1250,
+			"minecraft:item_name": "Reinforced Shield",
+			"minecraft:banner_patterns": [
+				{
+					"color": "gray",
+					"pattern": "minecraft:base"
+				},
+				{
+					"color": "light_gray",
+					"pattern": "minecraft:curly_border"
+				},
+				{
+					"color": "light_gray",
+					"pattern": "minecraft:triangles_bottom"
+				},
+				{
+					"color": "light_gray",
+					"pattern": "minecraft:triangles_top"
+				},
+				{
+					"color": "gray",
+					"pattern": "minecraft:border"
+				}
+			],
+			"minecraft:rarity": "uncommon",
+			"minecraft:tooltip_display": {
+				"hidden_components": [
+					"minecraft:banner_patterns"
+				]
+			},
+			"minecraft:attribute_modifiers": [
+				{
+					"type": "minecraft:knockback_resistance",
+					"id": "7864af89-f0ce-4867-a2e5-7d9635f0bba6",
+					"amount": 0.2,
+					"operation": "add_value",
+					"slot": "hand"
+				}
+			]
+		},
+		"count": 1
+	}
+}

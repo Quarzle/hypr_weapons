@@ -1,0 +1,30 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+		[
+			"minecraft:blaze_powder"
+		],
+		[
+			"minecraft:glowstone_dust"
+		],
+		[
+			"minecraft:gunpowder"
+		]
+	],
+	"result": {
+		"id": "minecraft:test_block",
+		"components": {
+			"minecraft:item_name": "Phosphor",
+			"minecraft:damage_resistant": {
+				"types": "#minecraft:is_explosion"
+			},
+			"minecraft:item_model": "minecraft:phosphor",
+			"minecraft:rarity": "uncommon",
+			"minecraft:custom_data": {
+				"hypr-item": "phosphor"
+			}
+		},
+		"count": 2
+	}
+}
