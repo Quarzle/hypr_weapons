@@ -1,25 +1,10 @@
 {
 	"type": "minecraft:jigsaw",
-	"biomes": [
-		"plains",
-		"meadow",
-		"desert",
-		"sparse_jungle",
-		"savanna",
-		"savanna_plateau",
-		"sunflower_plains",
-		"badlands",
-		"beach",
-		"snowy_plains",
-		"snowy_beach",
-		"snowy_slopes",
-		"stony_shore",
-		"birch_forest"
-	],
+	"biomes": "#minecraft:has_structure/mineshaft",
 	"step": "vegetal_decoration",
 	"spawn_overrides": {},
 	"terrain_adaptation": "beard_thin",
-	"start_pool": "h_weapons:eiffel_tower",
+	"start_pool": "h_weapons:slime_ruin",
 	"size": 1,
 	"start_height": {
 		"absolute": 0

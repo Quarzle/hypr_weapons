@@ -1,14 +1,14 @@
 {
 	"structures": [
 		{
-			"structure": "h_weapons:eiffel_tower",
+			"structure": "h_weapons:slime_ruin",
 			"weight": 1
 		}
 	],
 	"placement": {
 		"type": "minecraft:random_spread",
-		"spacing": 29,
-		"separation": 12,
-		"salt": 11514
+		"spacing": 20,
+		"separation": 7,
+		"salt": 112765
 	}
 }
