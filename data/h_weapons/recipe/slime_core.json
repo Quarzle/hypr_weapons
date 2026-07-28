@@ -1,118 +1,124 @@
 {
 	"type": "minecraft:crafting_shaped",
 	"pattern": [
-		" o ",
-		"#H#",
-		" o "
+	  " o ",
+	  "#H#",
+	  " o "
 	],
 	"key": {
-		"o": [
-			"minecraft:slime_ball"
-		],
-		"#": [
-			"minecraft:slime_block"
-		],
-		"H": [
-			"minecraft:chainmail_chestplate",
-			"minecraft:copper_chestplate",
-			"minecraft:diamond_chestplate",
-			"minecraft:golden_chestplate",
-			"minecraft:iron_chestplate",
-			"minecraft:leather_chestplate",
-			"minecraft:diamond_chestplate"
-		]
+	  "o": [
+		"minecraft:slime_ball"
+	  ],
+	  "#": [
+		"minecraft:slime_block"
+	  ],
+	  "H": [
+		"minecraft:chainmail_chestplate",
+		"minecraft:copper_chestplate",
+		"minecraft:diamond_chestplate",
+		"minecraft:golden_chestplate",
+		"minecraft:iron_chestplate",
+		"minecraft:leather_chestplate",
+		"minecraft:diamond_chestplate"
+	  ]
 	},
 	"result": {
-		"id": "minecraft:leather_chestplate",
-		"components": {
-			"minecraft:item_name": {
-				"text": "Slime Core"
-			},
-			"minecraft:rarity": "uncommon",
-			"minecraft:custom_data": {
-				"hypr-item": "slime_core"
-			},
-			"minecraft:unbreakable": {},
-			"minecraft:tooltip_display": {
-				"hidden_components": [
-					"minecraft:dyed_color"
-				]
-			},
-			"minecraft:dyed_color": 3589190,
-			"minecraft:attribute_modifiers": [
-				{
-					"type": "minecraft:knockback_resistance",
-					"id": "53824578902453897032",
-					"amount": -1,
-					"operation": "add_multiplied_total",
-					"slot": "chest",
-					"display": {
-						"type": "hidden"
-					}
-				},
-				{
-					"type": "minecraft:safe_fall_distance",
-					"id": "926966ca-88ff-4954-90e2-bb7a491992cb",
-					"amount": 20,
-					"operation": "add_value",
-					"slot": "chest",
-					"display": {
-						"type": "hidden"
-					}
-				},
-				{
-					"type": "minecraft:fall_damage_multiplier",
-					"id": "ce4570e1-f03a-430e-aa99-13ee8fb1872d",
-					"amount": -0.5,
-					"operation": "add_multiplied_total",
-					"slot": "chest"
-				},
-				{
-					"type": "minecraft:armor",
-					"id": "63f4b4c1-62b4-4e65-a8c4-84517ca7c699",
-					"amount": 6,
-					"operation": "add_value",
-					"slot": "chest"
-				},
-				{
-					"type": "minecraft:friction_modifier",
-					"id": "05384322-deaa-4596-bea9-06cdc7e1ea54",
-					"amount": -0.7,
-					"operation": "add_multiplied_total",
-					"slot": "chest",
-					"display": {
-						"type": "hidden"
-					}
-				},
-				{
-					"type": "minecraft:gravity",
-					"id": "de9e91d5-4a17-410d-893e-fbf96b950b3f",
-					"amount": -0.5,
-					"operation": "add_multiplied_total",
-					"slot": "chest",
-					"display": {
-						"type": "hidden"
-					}
-				},
-				{
-					"type": "minecraft:air_drag_modifier",
-					"id": "1262b475-04a9-4ec7-9a8d-f9e59c2f12ce",
-					"amount": -0.8,
-					"operation": "add_multiplied_total",
-					"slot": "chest",
-					"display": {
-						"type": "hidden"
-					}
-				},
-				{
-					"type": "minecraft:bounciness",
-					"id": "f3e7e369-a732-484f-9dce-836310478817",
-					"amount": 2,
-					"operation": "add_value",
-					"slot": "chest"
-				}
-			],
-			"minecraft:item_model": "minecraft:slime_core"
+	  "id": "minecraft:leather_chestplate",
+	  "components": {
+		"minecraft:item_name": {
+		  "text": "Slime Core"
+		},
+		"minecraft:rarity": "uncommon",
+		"minecraft:custom_data": {
+		  "hypr-item": "slime_core"
+		},
+		"minecraft:unbreakable": {},
+		"minecraft:tooltip_display": {
+		  "hidden_components": [
+			"minecraft:trim",
+			"minecraft:dyed_color"
+		  ]
+		},
+		"minecraft:dyed_color": 3589190,
+		"minecraft:attribute_modifiers": [
+		  {
+			"type": "minecraft:knockback_resistance",
+			"id": "53824578902453897032",
+			"amount": -1,
+			"operation": "add_multiplied_total",
+			"slot": "chest",
+			"display": {
+			  "type": "hidden"
+			}
+		  },
+		  {
+			"type": "minecraft:safe_fall_distance",
+			"id": "926966ca-88ff-4954-90e2-bb7a491992cb",
+			"amount": 20,
+			"operation": "add_value",
+			"slot": "chest",
+			"display": {
+			  "type": "hidden"
+			}
+		  },
+		  {
+			"type": "minecraft:fall_damage_multiplier",
+			"id": "ce4570e1-f03a-430e-aa99-13ee8fb1872d",
+			"amount": -0.5,
+			"operation": "add_multiplied_total",
+			"slot": "chest"
+		  },
+		  {
+			"type": "minecraft:armor",
+			"id": "63f4b4c1-62b4-4e65-a8c4-84517ca7c699",
+			"amount": 6,
+			"operation": "add_value",
+			"slot": "chest"
+		  },
+		  {
+			"type": "minecraft:friction_modifier",
+			"id": "05384322-deaa-4596-bea9-06cdc7e1ea54",
+			"amount": -0.7,
+			"operation": "add_multiplied_total",
+			"slot": "chest",
+			"display": {
+			  "type": "hidden"
+			}
+		  },
+		  {
+			"type": "minecraft:gravity",
+			"id": "de9e91d5-4a17-410d-893e-fbf96b950b3f",
+			"amount": -0.5,
+			"operation": "add_multiplied_total",
+			"slot": "chest",
+			"display": {
+			  "type": "hidden"
+			}
+		  },
+		  {
+			"type": "minecraft:air_drag_modifier",
+			"id": "1262b475-04a9-4ec7-9a8d-f9e59c2f12ce",
+			"amount": -0.8,
+			"operation": "add_multiplied_total",
+			"slot": "chest",
+			"display": {
+			  "type": "hidden"
+			}
+		  },
+		  {
+			"type": "minecraft:bounciness",
+			"id": "f3e7e369-a732-484f-9dce-836310478817",
+			"amount": 2,
+			"operation": "add_value",
+			"slot": "chest"
+		  }
+		],
+		"minecraft:item_model": "minecraft:slime_core",
+		"minecraft:trim": {
+		  "material": "minecraft:emerald",
+		  "pattern": "minecraft:ward"
 		}
+	  },
+	  "count": 1
 	}
-}
+  }

@@ -6,6 +6,7 @@ summon mannequin ~ ~ ~-1 {profile: {model:"wide",texture:"entity/player/carrot_s
 
 scoreboard players set %aggro_time variable 200
 tag @s add carrot_warrior
+effect give @s night_vision 120 0 true
 tag @a[tag=carrot_targeted] remove carrot_targeted
 
 scoreboard players set %blocks_traversed variable 0
