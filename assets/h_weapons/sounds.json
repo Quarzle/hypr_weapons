@@ -1,0 +1,10 @@
+{
+  "music_disc.happy_day_in_paris": {
+    "sounds": [
+      {
+        "name": "h_weapons:happy_day_in_paris",
+        "stream": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "comparator_output": 13,
+  "description": {
+    "text": "Happy Day in Paris"
+  },
+  "length_in_seconds": 139.2,
+  "sound_event": {
+    "sound_id": "h_weapons:music_disc.happy_day_in_paris"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "h_weapons:eiffel_tower",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "spacing": 35,
+    "separation": 12,
+    "salt": 11514
+  }
+}

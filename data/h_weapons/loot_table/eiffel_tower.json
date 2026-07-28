@@ -1,0 +1,139 @@
+{
+	"type": "minecraft:chest",
+	"pools": [
+		{
+			"rolls": {
+				"type": "minecraft:uniform",
+				"min": 4,
+				"max": 5
+			},
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:iron_bars",
+					"weight": 1,
+					"quality": 3,
+					"conditions": [],
+					"functions": [
+						{
+							"function": "minecraft:set_count",
+							"count": 8
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:netherite_nautilus_armor",
+					"weight": 1,
+					"quality": 3,
+					"conditions": [],
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_name": "Seared Snail",
+								"minecraft:food": {
+									"nutrition": 3,
+									"saturation": 12,
+									"can_always_eat": true
+								},
+								"minecraft:consumable": {
+									"on_consume_effects": [
+										{
+											"type": "minecraft:apply_effects",
+											"effects": [
+												{
+													"id": "minecraft:absorption",
+													"amplifier": 0,
+													"duration": 600
+												}
+											],
+											"probability": 1
+										}
+									]
+								},
+								"minecraft:attribute_modifiers": [
+									{
+										"type": "minecraft:armor",
+										"id": "1234756226",
+										"amount": 0,
+										"operation": "add_value",
+										"slot": "armor",
+										"display": {
+											"type": "hidden"
+										}
+									}
+								],
+								"minecraft:max_stack_size": 16
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:bread",
+					"weight": 6,
+					"quality": 6,
+					"conditions": [],
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:item_model": "croissant",
+								"minecraft:item_name": "Croissant"
+							}
+						},
+						{
+							"function": "minecraft:set_count",
+							"count": {
+								"type": "minecraft:uniform",
+								"min": 1,
+								"max": 4
+							},
+							"add": true
+						}
+					]
+				},
+				{
+					"type": "minecraft:group",
+					"children": [
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:cobweb",
+							"weight": 4,
+							"quality": 2
+						},
+						{
+							"type": "minecraft:item",
+							"name": "minecraft:string",
+							"weight": 5,
+							"quality": 1,
+							"functions": [
+								{
+									"function": "minecraft:set_count",
+									"count": {
+										"type": "minecraft:uniform",
+										"min": 1,
+										"max": 5
+									},
+									"add": true
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"functions": [
+		{
+			"function": "minecraft:set_count",
+			"count": {
+				"type": "minecraft:uniform",
+				"min": 0,
+				"max": 6
+			},
+			"add": true
+		}
+	]
+}
