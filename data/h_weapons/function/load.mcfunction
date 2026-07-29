@@ -6,6 +6,6 @@ scoreboard objectives add spell_cooldown dummy
 
 scoreboard objectives add right_clicked minecraft.used:carrot_on_a_stick
 
-schedule function h_weapons:20_tick 1t
+schedule function h_weapons:periodic_tick 1t
 
 say loaded!
