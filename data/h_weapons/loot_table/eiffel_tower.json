@@ -24,8 +24,8 @@
 				{
 					"type": "minecraft:item",
 					"name": "minecraft:netherite_nautilus_armor",
-					"weight": 1,
-					"quality": 3,
+					"weight": 2,
+					"quality": 4,
 					"conditions": [],
 					"functions": [
 						{

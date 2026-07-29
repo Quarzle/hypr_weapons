@@ -1,14 +1,14 @@
 {
 	"structures": [
 		{
-			"structure": "h_weapons:eiffel_tower",
+			"structure": "h_weapons:carrot_farm",
 			"weight": 1
 		}
 	],
 	"placement": {
 		"type": "minecraft:random_spread",
-		"spacing": 34,
-		"separation": 20,
-		"salt": 11514
+		"spacing": 28,
+		"separation": 10,
+		"salt": 6753545
 	}
 }
