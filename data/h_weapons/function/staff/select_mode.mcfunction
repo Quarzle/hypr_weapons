@@ -29,19 +29,28 @@ execute as @e[type=text_display,tag=temp_staff,tag=!selected] run data merge ent
 
 
 # lightning | cost : 7
-execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"lightning"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=7..}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={strings:["lightning"]},lore=[{text:"Charged spell: lightning"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"fire"},item_model="minecraft:staff",unbreakable={}]
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"lightning"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=..6}] run tellraw @s {text:"Not enough mana!",color:"red"}
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"lightning"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=..6}] run playsound minecraft:item.axe.scrape player @s ~ ~ ~ 2 2
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"lightning"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=7..}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={strings:["lightning"]},lore=[{text:"Charged spell: lightning"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"fire"},item_model="minecraft:staff",unbreakable={},rarity="epic"]
 execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"lightning"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=7..}] run scoreboard players remove @s mana 7
 
+
 # fireball | cost : 10
-execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"fireball"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=10..}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={strings:["fireball"]},lore=[{text:"Charged spell: fireball"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"fire"},item_model="minecraft:staff",unbreakable={}]
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"fireball"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=..9}] run tellraw @s {text:"Not enough mana!",color:"red"}
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"fireball"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=..9}] run playsound minecraft:item.axe.scrape player @s ~ ~ ~ 2 2
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"fireball"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=10..}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={strings:["fireball"]},lore=[{text:"Charged spell: fireball"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"fire"},item_model="minecraft:staff",unbreakable={},rarity="epic"]
 execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"fireball"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=10..}] run scoreboard players remove @s mana 10
 
 # warp | cost : 5
-execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"warp"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=5..}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={strings:["warp"]},lore=[{text:"Charged spell: warp"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"fire"},item_model="minecraft:staff",unbreakable={}]
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"warp"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=..4}] run tellraw @s {text:"Not enough mana!",color:"red"}
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"warp"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=..4}] run playsound minecraft:item.axe.scrape player @s ~ ~ ~ 2 2
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"warp"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=5..}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={strings:["warp"]},lore=[{text:"Charged spell: warp"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"fire"},item_model="minecraft:staff",unbreakable={},rarity="epic"]
 execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"warp"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=5..}] run scoreboard players remove @s mana 5
 
 # enchant | cost : 12
-execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"enchant"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=15..}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={strings:["enchant"]},lore=[{text:"Charged spell: enchantment"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"fire"},item_model="minecraft:staff",unbreakable={}]
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"enchant"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=..14}] run tellraw @s {text:"Not enough mana!",color:"red"}
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"enchant"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=..14}] run playsound minecraft:item.axe.scrape player @s ~ ~ ~ 2 2
+execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"enchant"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=15..}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={strings:["enchant"]},lore=[{text:"Charged spell: enchantment"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"fire"},item_model="minecraft:staff",unbreakable={},rarity="epic"]
 execute as @e[type=text_display,tag=temp_staff,tag=selected,nbt={CustomName:"enchant"}] at @s as @a[tag=was_right_clicking,tag=!right_clicking,limit=1,sort=nearest,scores={mana=15..}] run scoreboard players remove @s mana 15
 
 # kill entities on rc release
@@ -50,10 +59,3 @@ execute as @s[tag=was_right_clicking,tag=!right_clicking] at @s run kill @e[tag=
 
 
 tag @s[tag=!right_clicking,tag=was_right_clicking] remove was_right_clicking
-
-execute as @a at @s run tag @e[type=text_display,distance=..5,tag=temp_staff] add safe
-execute as @a at @s run tag @e[type=marker,distance=..5,tag=staff_pos_marker] add safe
-kill @e[tag=!safe,type=text_display,tag=temp_staff]
-kill @e[tag=!safe,type=marker,tag=staff_pos_marker]
-tag @e[tag=safe,type=text_display,tag=temp_staff] remove safe
-tag @e[tag=safe,type=marker,tag=staff_pos_marker] remove safe

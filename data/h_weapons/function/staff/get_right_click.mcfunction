@@ -17,3 +17,10 @@ execute as @a[scores={spell_cooldown=..0}] at @s if items entity @s weapon.mainh
 execute as @a at @s if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={"hypr-item":"staff","mode":"fire"}] run function h_weapons:staff/fire_mode
 
 scoreboard players remove @a spell_cooldown 1
+
+execute as @a at @s run tag @e[type=text_display,distance=..5,tag=temp_staff] add safe
+execute as @a at @s run tag @e[type=marker,distance=..5,tag=staff_pos_marker] add safe
+kill @e[tag=!safe,type=text_display,tag=temp_staff]
+kill @e[tag=!safe,type=marker,tag=staff_pos_marker]
+tag @e[tag=safe,type=text_display,tag=temp_staff] remove safe
+tag @e[tag=safe,type=marker,tag=staff_pos_marker] remove safe

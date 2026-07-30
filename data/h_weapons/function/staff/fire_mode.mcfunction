@@ -19,4 +19,4 @@ execute as @s[tag=!was_right_clicking,tag=right_clicking] if items entity @s wea
 execute as @s[tag=!was_right_clicking,tag=right_clicking] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={strings:["enchant"]}] at @s anchored eyes run function h_weapons:staff/hit_block_raycast
 
 
-execute as @s[tag=!was_right_clicking,tag=right_clicking] run item replace entity @s weapon.mainhand with carrot_on_a_stick[lore=[{text:"Charged spell: none"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"select"},item_model="minecraft:staff",unbreakable={}]
+execute as @s[tag=!was_right_clicking,tag=right_clicking] run item replace entity @s weapon.mainhand with carrot_on_a_stick[lore=[{text:"Charged spell: none"}],item_name="Mage Staff",custom_data={"hypr-item":"staff","mode":"select"},item_model="minecraft:staff",unbreakable={},rarity="epic"]
