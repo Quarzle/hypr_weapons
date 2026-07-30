@@ -1,0 +1,14 @@
+{
+	"structures": [
+		{
+			"structure": "h_weapons:temple",
+			"weight": 1
+		}
+	],
+	"placement": {
+		"type": "minecraft:random_spread",
+		"spacing": 28,
+		"separation": 7,
+		"salt": 58203
+	}
+}
