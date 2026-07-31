@@ -17,3 +17,5 @@ function h_weapons:staff/get_right_click
 function h_weapons:staff/enchanted_entities
 
 function h_weapons:pantheon/boon_chosen
+
+function h_weapons:pantheon/boon_commands

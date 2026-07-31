@@ -1,7 +1,19 @@
 execute as @e[type=interaction,tag=boon_choice,tag=hestia] if data entity @s interaction at @s positioned ~-3.5 ~-1 ~ run function h_weapons:effects/flash
-execute as @e[type=interaction,tag=boon_choice,tag=hestia] if data entity @s interaction at @s positioned ~-3.5 ~-1 ~ run loot spawn ~ ~2 ~ loot h_weapons:pantheon/hestia
+execute as @e[type=interaction,tag=boon_choice,tag=hestia] if data entity @s interaction at @s run loot spawn ~ ~ ~ loot h_weapons:pantheon/hestia
+execute as @e[type=interaction,tag=boon_choice,tag=hestia] if data entity @s interaction at @s run particle flame ~ ~ ~ 0.3 0.3 0.3 0.1 32
 execute as @e[type=interaction,tag=boon_choice,tag=hestia] if data entity @s interaction at @s run kill @e[distance=..12,tag=boon_choice]
 
 execute as @e[type=interaction,tag=boon_choice,tag=dionysus] if data entity @s interaction at @s positioned ~3.5 ~-1 ~ run function h_weapons:effects/flash
-execute as @e[type=interaction,tag=boon_choice,tag=dionysus] if data entity @s interaction at @s positioned ~3.5 ~-1 ~ run loot spawn ~ ~2 ~ loot h_weapons:pantheon/dionysus
+execute as @e[type=interaction,tag=boon_choice,tag=dionysus] if data entity @s interaction at @s run loot spawn ~ ~ ~ loot h_weapons:pantheon/dionysus
+execute as @e[type=interaction,tag=boon_choice,tag=dionysus] if data entity @s interaction at @s run particle dust{color:3997748, scale:0.9} ~ ~ ~ 0.3 0.3 0.3 0.1 32
 execute as @e[type=interaction,tag=boon_choice,tag=dionysus] if data entity @s interaction at @s run kill @e[distance=..12,tag=boon_choice]
+
+execute as @e[type=interaction,tag=boon_choice,tag=poseidon] if data entity @s interaction at @s positioned ~ ~-1 ~-3.5 run function h_weapons:effects/flash
+execute as @e[type=interaction,tag=boon_choice,tag=poseidon] if data entity @s interaction at @s run loot spawn ~ ~ ~ loot h_weapons:pantheon/poseidon
+execute as @e[type=interaction,tag=boon_choice,tag=poseidon] if data entity @s interaction at @s run particle splash ~ ~ ~ 0.3 0.3 0.3 0.1 32
+execute as @e[type=interaction,tag=boon_choice,tag=poseidon] if data entity @s interaction at @s run kill @e[distance=..12,tag=boon_choice]
+
+execute as @e[type=interaction,tag=boon_choice,tag=hermes] if data entity @s interaction at @s positioned ~ ~-1 ~3.5 run function h_weapons:effects/flash
+execute as @e[type=interaction,tag=boon_choice,tag=hermes] if data entity @s interaction at @s run loot spawn ~ ~ ~ loot h_weapons:pantheon/hermes
+execute as @e[type=interaction,tag=boon_choice,tag=hermes] if data entity @s interaction at @s run particle cloud ~ ~ ~ 0.3 0.3 0.3 0.1 32
+execute as @e[type=interaction,tag=boon_choice,tag=hermes] if data entity @s interaction at @s run kill @e[distance=..12,tag=boon_choice]

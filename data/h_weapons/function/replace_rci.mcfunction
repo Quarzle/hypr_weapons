@@ -7,3 +7,8 @@ execute as @a[tag=need_new_carrot_mainhand] run item replace entity @s weapon.ma
 execute as @a[tag=need_new_carrot_offhand] run item replace entity @s weapon.offhand with carrot[custom_data={hypr-item:"super_carrot"},item_name={"text":"Super Carrot"},rarity="rare",consumable={consume_seconds:1.5,animation:"eat",on_consume_effects:[{type:"minecraft:play_sound",sound:"item.bone_meal.use"}]},unbreakable={},use_cooldown={seconds:9.3,cooldown_group:"carrot"},item_model="minecraft:super_carrot",food={nutrition:6,saturation:2,can_always_eat:true},max_stack_size=1]
 tag @a[tag=need_new_carrot_mainhand] remove need_new_carrot_mainhand
 tag @a[tag=need_new_carrot_offhand] remove need_new_carrot_offhand
+
+execute as @a[tag=need_new_dice_mainhand] run item replace entity @s weapon.mainhand with echo_shard[custom_data={hypr-item:"dice"},item_name={"text":"Gambler's Dice"},consumable={consume_seconds:2,animation:"brush",has_consume_particles:false,sound:"minecraft:block.bamboo.fall"},use_cooldown={seconds:5,cooldown_group:"dice"},item_model="minecraft:dice",max_stack_size=1]
+execute as @a[tag=need_new_dice_offhand] run item replace entity @s weapon.offhand with echo_shard[custom_data={hypr-item:"dice"},item_name={"text":"Gambler's Dice"},consumable={consume_seconds:2,animation:"brush",has_consume_particles:false,sound:"minecraft:block.bamboo.fall"},use_cooldown={seconds:5,cooldown_group:"dice"},item_model="minecraft:dice",max_stack_size=1]
+tag @a[tag=need_new_dice_mainhand] remove need_new_dice_mainhand
+tag @a[tag=need_new_dice_offhand] remove need_new_dice_offhand

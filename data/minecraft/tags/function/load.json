@@ -1,5 +1,6 @@
 {
 	"values": [
-		"h_weapons:load"
+		"h_weapons:load",
+		"player_motion:internal/technical/load"
 	]
 }

@@ -1,1 +1,110 @@
-{}
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:horse_spawn_egg",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Summon Son Of Arion",
+                "minecraft:rarity": "rare",
+                "minecraft:entity_data": {
+                  "id": "minecraft:horse",
+                  "CustomName": {
+                    "text": "Son Of Arion"
+                  },
+                  "attributes": [
+                    {
+                      "id": "minecraft:scale",
+                      "base": 1.15
+                    },
+                    {
+                      "id": "minecraft:jump_strength",
+                      "base": 1
+                    },
+                    {
+                      "id": "minecraft:max_health",
+                      "base": 40
+                    },
+                    {
+                      "id": "minecraft:movement_speed",
+                      "base": 0.45,
+                      "modifiers": []
+                    }
+                  ],
+                  "equipment": {
+                    "saddle": {
+                      "id": "minecraft:saddle"
+                    },
+                    "body": {
+                      "id": "minecraft:netherite_horse_armor"
+                    }
+                  },
+                  "PersistenceRequired": true,
+                  "Tame": true,
+                  "Variant": 4
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod_spawn_egg",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:entity_data": {
+                  "id": "minecraft:oak_chest_boat",
+                  "LootTable": "minecraft:chests/buried_treasure"
+                },
+                "minecraft:item_name": "Pocket Vessel",
+                "minecraft:rarity": "uncommon"
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:trident",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": "Posiedon's Trident",
+                "minecraft:enchantments": {
+                  "minecraft:riptide": 5
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:use_effects": {
+                  "can_sprint": true,
+                  "speed_multiplier": 1
+                },
+                "minecraft:custom_data": {
+                  "hypr-item": "p_trident"
+                },
+                "minecraft:lore": [
+                  {
+                    "text": "Creates water while crouching on ground"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

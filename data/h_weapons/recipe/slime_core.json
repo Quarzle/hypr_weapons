@@ -64,7 +64,7 @@
 		  {
 			"type": "minecraft:fall_damage_multiplier",
 			"id": "ce4570e1-f03a-430e-aa99-13ee8fb1872d",
-			"amount": -0.5,
+			"amount": -1,
 			"operation": "add_multiplied_total",
 			"slot": "chest"
 		  },
