@@ -1,0 +1,143 @@
+{
+	"type": "minecraft:gift",
+	"pools": [
+		{
+			"rolls": 1,
+			"entries": [
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:potion",
+					"weight": 1,
+					"quality": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_name": {
+									"text": "Spirits",
+									"italic": false
+								},
+								"minecraft:potion_contents": {
+									"potion": "minecraft:water",
+									"custom_color": 14272683,
+									"custom_effects": [
+										{
+											"id": "minecraft:nausea",
+											"amplifier": 0,
+											"duration": 800
+										},
+										{
+											"id": "minecraft:strength",
+											"amplifier": 2,
+											"duration": 800,
+											"hidden_effect": {
+												"id": "minecraft:strength",
+												"amplifier": 0,
+												"duration": 1000,
+												"show_particles": false
+											}
+										}
+									]
+								},
+								"minecraft:rarity": "rare",
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:potion_contents"
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:potion",
+					"weight": 1,
+					"quality": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_name": {
+									"text": "Fine Wine",
+									"italic": false
+								},
+								"minecraft:potion_contents": {
+									"potion": "minecraft:water",
+									"custom_color": 14616327,
+									"custom_effects": [
+										{
+											"id": "minecraft:mining_fatigue",
+											"amplifier": 0,
+											"duration": 1500
+										},
+										{
+											"id": "minecraft:strength",
+											"amplifier": 0,
+											"duration": 1500
+										},
+										{
+											"id": "minecraft:resistance",
+											"amplifier": 0,
+											"duration": 1500
+										}
+									]
+								},
+								"minecraft:rarity": "uncommon",
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:potion_contents"
+									]
+								}
+							}
+						}
+					]
+				},
+				{
+					"type": "minecraft:item",
+					"name": "minecraft:potion",
+					"weight": 1,
+					"quality": 1,
+					"functions": [
+						{
+							"function": "minecraft:set_components",
+							"components": {
+								"minecraft:custom_name": {
+									"text": "Grape Juice",
+									"italic": false
+								},
+								"minecraft:potion_contents": {
+									"potion": "minecraft:water",
+									"custom_color": 13572031,
+									"custom_effects": [
+										{
+											"id": "minecraft:speed",
+											"amplifier": 1,
+											"duration": 1500
+										},
+										{
+											"id": "minecraft:haste",
+											"amplifier": 1,
+											"duration": 1500
+										},
+										{
+											"id": "minecraft:jump_boost",
+											"amplifier": 1,
+											"duration": 1500
+										}
+									]
+								},
+								"minecraft:rarity": "epic",
+								"minecraft:tooltip_display": {
+									"hidden_components": [
+										"minecraft:potion_contents"
+									]
+								}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

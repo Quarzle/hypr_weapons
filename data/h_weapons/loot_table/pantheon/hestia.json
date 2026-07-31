@@ -1,0 +1,153 @@
+{
+	"type": "minecraft:gift",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:rabbit_stew",
+			"weight": 1,
+			"quality": 1,
+			"functions": [
+			  {
+				"function": "minecraft:set_components",
+				"components": {
+				  "minecraft:item_name": "Hearty Brew",
+				  "minecraft:food": {
+					"nutrition": 20,
+					"saturation": 20,
+					"can_always_eat": true
+				  },
+				  "minecraft:consumable": {
+					"on_consume_effects": [
+					  {
+						"type": "minecraft:clear_all_effects"
+					  },
+					  {
+						"type": "minecraft:apply_effects",
+						"effects": [
+						  {
+							"id": "minecraft:absorption",
+							"amplifier": 1,
+							"duration": 3000,
+							"show_particles": false
+						  },
+						  {
+							"id": "minecraft:regeneration",
+							"amplifier": 1,
+							"duration": 200,
+							"show_particles": true
+						  },
+						  {
+							"id": "minecraft:strength",
+							"amplifier": 0,
+							"duration": 3000,
+							"show_particles": false
+						  },
+						  {
+							"id": "minecraft:fire_resistance",
+							"amplifier": 0,
+							"duration": 3000,
+							"show_particles": false
+						  },
+						  {
+							"id": "minecraft:night_vision",
+							"amplifier": 0,
+							"duration": 3000,
+							"ambient": false
+						  },
+						  {
+							"id": "minecraft:jump_boost",
+							"amplifier": 0,
+							"duration": 3000,
+							"show_particles": false
+						  },
+						  {
+							"id": "minecraft:speed",
+							"amplifier": 0,
+							"duration": 3000,
+							"show_particles": false
+						  },
+						  {
+							"id": "minecraft:haste",
+							"amplifier": 1,
+							"duration": 3000,
+							"show_particles": false
+						  },
+						  {
+							"id": "minecraft:conduit_power",
+							"amplifier": 0,
+							"duration": 1500,
+							"show_particles": false
+						  }
+						],
+						"probability": 1
+					  }
+					]
+				  },
+				  "minecraft:rarity": "uncommon"
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:leather_chestplate",
+			"weight": 1,
+			"quality": 1,
+			"functions": [
+			  {
+				"function": "minecraft:set_components",
+				"components": {
+				  "minecraft:item_name": "Sun Tunic",
+				  "minecraft:dyed_color": 14929211,
+				  "minecraft:tooltip_display": {
+					"hidden_components": [
+					  "minecraft:dyed_color",
+					  "minecraft:trim"
+					]
+				  },
+				  "minecraft:attribute_modifiers": [
+					{
+					  "type": "minecraft:armor",
+					  "id": "8gh-1g38-g833g",
+					  "amount": 7,
+					  "operation": "add_value",
+					  "slot": "chest"
+					}
+				  ],
+				  "minecraft:enchantments": {
+					"minecraft:fire_protection": 10
+				  },
+				  "minecraft:max_damage": 1680,
+				  "minecraft:trim": {
+					"material": "minecraft:resin",
+					"pattern": "minecraft:silence"
+				  },
+				  "minecraft:rarity": "rare"
+				}
+			  }
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:flint_and_steel",
+			"weight": 1,
+			"quality": 1,
+			"functions": [
+			  {
+				"function": "minecraft:set_components",
+				"components": {
+				  "minecraft:item_name": "Everburning Branch",
+				  "minecraft:rarity": "rare",
+				  "minecraft:unbreakable": {},
+				  "minecraft:item_model": "minecraft:everburning_branch"
+				}
+			  }
+			]
+		  }
+		]
+	  }
+	]
+  }
