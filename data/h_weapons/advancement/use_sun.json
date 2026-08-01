@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"right_click": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"components": {
+						"minecraft:custom_data": {
+							"hypr-item": "sun_dial"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "h_weapons:pantheon/sun_dial_effect"
+	}
+}

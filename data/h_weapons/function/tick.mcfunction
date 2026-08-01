@@ -6,7 +6,6 @@ execute as @a[tag=mana_bar] unless items entity @s weapon.mainhand minecraft:car
 execute as @a[tag=mana_bar] unless items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={"hypr-item":"staff","mode":"fire"}] run tag @s remove mana_bar
 execute as @a[tag=mana_bar] unless items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={"hypr-item":"staff","mode":"select"}] run tag @s remove mana_bar
 
-
 execute as @a[gamemode=!spectator] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={"hypr-item":"staff","mode":"fire"}] run tag @s add mana_bar
 execute as @a[gamemode=!spectator] if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={"hypr-item":"staff","mode":"select"}] run tag @s add mana_bar
 

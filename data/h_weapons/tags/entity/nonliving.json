@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+	"#minecraft:arrows",
+	"#minecraft:falling_blocks",
+	"minecraft:experience_orb",
+	"minecraft:marker",
+	"minecraft:item",
+	"minecraft:item_frame",
+	"minecraft:glow_item_frame",
+	"minecraft:text_display",
+	"minecraft:block_display",
+	"minecraft:item_display",
+	"minecraft:area_effect_cloud",
+	"minecraft:mannequin"
+  ]
+}

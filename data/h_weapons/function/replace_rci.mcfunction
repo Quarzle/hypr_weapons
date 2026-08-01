@@ -12,3 +12,8 @@ execute as @a[tag=need_new_dice_mainhand] run item replace entity @s weapon.main
 execute as @a[tag=need_new_dice_offhand] run item replace entity @s weapon.offhand with echo_shard[custom_data={hypr-item:"dice"},item_name={"text":"Gambler's Dice"},consumable={consume_seconds:2,animation:"brush",has_consume_particles:false,sound:"minecraft:block.bamboo.fall"},use_cooldown={seconds:5,cooldown_group:"dice"},item_model="minecraft:dice",max_stack_size=1]
 tag @a[tag=need_new_dice_mainhand] remove need_new_dice_mainhand
 tag @a[tag=need_new_dice_offhand] remove need_new_dice_offhand
+
+execute as @a[tag=need_new_sun_dial_mainhand] run item replace entity @s weapon.mainhand with echo_shard[custom_data={hypr-item:"sun_dial"},item_name={"text":"Sun Dial"},consumable={consume_seconds:0,has_consume_particles:false,sound:"block.bubble_column.bubble_pop"},item_model="minecraft:sunflower",max_stack_size=1]
+execute as @a[tag=need_new_sun_dial_offhand] run item replace entity @s weapon.offhand with echo_shard[custom_data={hypr-item:"sun_dial"},item_name={"text":"Sun Dial"},consumable={consume_seconds:0,has_consume_particles:false,sound:"block.bubble_column.bubble_pop"},item_model="minecraft:sunflower",max_stack_size=1]
+tag @a[tag=need_new_sun_dial_mainhand] remove need_new_sun_dial_mainhand
+tag @a[tag=need_new_sun_dial_offhand] remove need_new_sun_dial_offhand
