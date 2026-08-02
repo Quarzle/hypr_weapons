@@ -17,3 +17,13 @@ execute as @a[tag=need_new_sun_dial_mainhand] run item replace entity @s weapon.
 execute as @a[tag=need_new_sun_dial_offhand] run item replace entity @s weapon.offhand with echo_shard[custom_data={hypr-item:"sun_dial"},item_name={"text":"Sun Dial"},consumable={consume_seconds:0,has_consume_particles:false,sound:"block.bubble_column.bubble_pop"},item_model="minecraft:sunflower",max_stack_size=1]
 tag @a[tag=need_new_sun_dial_mainhand] remove need_new_sun_dial_mainhand
 tag @a[tag=need_new_sun_dial_offhand] remove need_new_sun_dial_offhand
+
+execute as @a[tag=need_new_lightning_rush_mainhand] run item replace entity @s weapon.mainhand with echo_shard[custom_data={hypr-item:"lightning_rush"},item_name={"text":"Lightning Rush"},consumable={consume_seconds:0,has_consume_particles:false,sound:"block.bubble_column.bubble_pop"},max_stack_size=1,item_model="minecraft:lightning_rush",rarity="epic",use_cooldown={seconds:8,cooldown_group:"lightning_rush"}]
+execute as @a[tag=need_new_lightning_rush_offhand] run item replace entity @s weapon.offhand with echo_shard[custom_data={hypr-item:"lightning_rush"},item_name={"text":"Lightning Rush"},consumable={consume_seconds:0,has_consume_particles:false,sound:"block.bubble_column.bubble_pop"},max_stack_size=1,item_model="minecraft:lightning_rush",rarity="epic",use_cooldown={seconds:8,cooldown_group:"lightning_rush"}]
+tag @a[tag=need_new_lightning_rush_mainhand] remove need_new_lightning_rush_mainhand
+tag @a[tag=need_new_lightning_rush_offhand] remove need_new_lightning_rush_offhand
+
+execute as @a[tag=need_new_storm_cloud_mainhand] run item replace entity @s weapon.mainhand with echo_shard[custom_data={hypr-item:"storm_cloud"},item_name={"text":"Storm Cloud"},consumable={consume_seconds:0,animation:"none",sound:"minecraft:block.bubble_column.bubble_pop",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:storm_cloud",max_stack_size=1,rarity="rare",use_cooldown={seconds:1,cooldown_group:"storm_cloud"}]
+execute as @a[tag=need_new_storm_cloud_offhand] run item replace entity @s weapon.offhand with echo_shard[custom_data={hypr-item:"storm_cloud"},item_name={"text":"Storm Cloud"},consumable={consume_seconds:0,animation:"none",sound:"minecraft:block.bubble_column.bubble_pop",has_consume_particles:false,on_consume_effects:[]},item_model="minecraft:storm_cloud",max_stack_size=1,rarity="rare",use_cooldown={seconds:1,cooldown_group:"storm_cloud"}]
+tag @a[tag=need_new_storm_cloud_mainhand] remove need_new_storm_cloud_mainhand
+tag @a[tag=need_new_storm_cloud_offhand] remove need_new_storm_cloud_offhand

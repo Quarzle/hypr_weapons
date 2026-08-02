@@ -1,3 +1,4 @@
+execute as @e[type=interaction,tag=boon_choice] if data entity @s interaction at @s run swing @p mainhand
 
 execute as @e[type=interaction,tag=boon_choice,tag=hestia] if data entity @s interaction at @s positioned ~-3.5 ~-1 ~ run function h_weapons:effects/flash
 execute as @e[type=interaction,tag=boon_choice,tag=hestia] if data entity @s interaction at @s run loot spawn ~ ~ ~ loot h_weapons:pantheon/hestia
@@ -28,3 +29,9 @@ execute as @e[type=interaction,tag=boon_choice,tag=apollo] if data entity @s int
 execute as @e[type=interaction,tag=boon_choice,tag=apollo] if data entity @s interaction at @s run particle effect{color:14852622} ~ ~ ~ 0.3 0.3 0.3 0.1 32
 execute as @e[type=interaction,tag=boon_choice,tag=apollo] if data entity @s interaction at @s run tag @e[distance=..12,type=marker,tag=used] remove used
 execute as @e[type=interaction,tag=boon_choice,tag=apollo] if data entity @s interaction at @s run kill @e[distance=..12,tag=boon_choice]
+
+execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s interaction at @s positioned ~-2.5 ~-1 ~2.5 run function h_weapons:effects/flash
+execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s interaction at @s run loot spawn ~ ~ ~ loot h_weapons:pantheon/zeus
+execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s interaction at @s run particle totem_of_undying ~ ~ ~ 0.3 0.3 0.3 0.1 32
+execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s interaction at @s run tag @e[distance=..12,type=marker,tag=used] remove used
+execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s interaction at @s run kill @e[distance=..12,tag=boon_choice]

@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"right_click": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"components": {
+						"minecraft:custom_data": {
+							"hypr-item": "lightning_rush"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "h_weapons:pantheon/lightning_rush_effect"
+	}
+}

@@ -1,6 +1,7 @@
 execute store result storage h_weapons:dice roll int 1 run random value 1..6
 
 execute if data storage h_weapons:dice {roll:1} run tellraw @s {text: "You rolled a 1...",color:red}
+execute if data storage h_weapons:dice {roll:1} run effect clear @s saturation
 execute if data storage h_weapons:dice {roll:1} run effect give @s blindness 50 0
 execute if data storage h_weapons:dice {roll:1} run effect give @s wither 50 9
 

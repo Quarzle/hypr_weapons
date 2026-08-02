@@ -1,0 +1,19 @@
+{
+	"criteria": {
+		"right_click": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+				"item": {
+					"components": {
+						"minecraft:custom_data": {
+							"hypr-item": "storm_cloud"
+						}
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "h_weapons:pantheon/storm_cloud_effect"
+	}
+}

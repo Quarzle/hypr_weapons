@@ -26,3 +26,18 @@ execute as @a[scores={bow_shot=1..}] run scoreboard players set @s bow_shot 0
 
 execute as @e[type=#minecraft:arrows,tag=arrow_homing,scores={arrow_age=5..}] at @s facing entity @n[scores={homing_immunity=..0},distance=..20,type=!mannequin,type=!#minecraft:arrows,type=!item,type=!item_frame,type=!glow_item_frame,type=!text_display,type=!minecraft:marker,type=!minecraft:block_display,type=!minecraft:experience_orb] eyes run function h_weapons:pantheon/apply_forward_motion_entity
 execute as @e[type=#minecraft:arrows,tag=arrow_homing,nbt={inGround:1b}] run tag @s remove arrow_homing 
+
+# sun tunic
+execute as @a if items entity @s armor.chest minecraft:leather_chestplate[custom_data={"hypr-item":"sun_tunic"}] at @s run effect give @s minecraft:fire_resistance 1 0 true
+
+# lightning rush
+execute as @a[scores={lightning_rush_counter=-200..}] run scoreboard players remove @s lightning_rush_counter 1
+execute as @a[scores={lightning_rush_counter=0..},predicate=!h_weapons:is_sprinting] run scoreboard players remove @s lightning_rush_counter 40
+execute as @a[scores={lightning_rush_counter=0..},predicate=!h_weapons:is_sprinting] run scoreboard players remove @s lightning_rush_counter 40
+execute as @a[scores={lightning_rush_counter=1..}] at @s run summon lightning_bolt ~ ~ ~
+execute as @a[scores={lightning_rush_counter=..0}] run attribute @s step_height modifier remove lr_step
+execute as @a[scores={lightning_rush_counter=..0}] run gamemode survival @s
+execute as @a[scores={lightning_rush_counter=..-45}] run effect clear @s resistance
+execute as @a[scores={lightning_rush_counter=..0}] run effect clear @s speed
+execute as @a[scores={lightning_rush_counter=..0}] run item replace entity @s player.cursor with air
+execute as @a[scores={lightning_rush_counter=..0}] run scoreboard players reset @s lightning_rush_counter
