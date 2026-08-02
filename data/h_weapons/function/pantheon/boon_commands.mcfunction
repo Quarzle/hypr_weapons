@@ -32,12 +32,8 @@ execute as @a if items entity @s armor.chest minecraft:leather_chestplate[custom
 
 # lightning rush
 execute as @a[scores={lightning_rush_counter=-200..}] run scoreboard players remove @s lightning_rush_counter 1
-execute as @a[scores={lightning_rush_counter=0..},predicate=!h_weapons:is_sprinting] run scoreboard players remove @s lightning_rush_counter 40
-execute as @a[scores={lightning_rush_counter=0..},predicate=!h_weapons:is_sprinting] run scoreboard players remove @s lightning_rush_counter 40
-execute as @a[scores={lightning_rush_counter=1..}] at @s run summon lightning_bolt ~ ~ ~
-execute as @a[scores={lightning_rush_counter=..0}] run attribute @s step_height modifier remove lr_step
+execute as @a[scores={lightning_rush_counter=1..}] run effect give @s minecraft:resistance 2 4 true
+execute as @a[scores={lightning_rush_counter=..0}] at @s run tp @s ~ ~-30 ~
+execute as @a[scores={lightning_rush_counter=..0}] at @s run summon lightning_bolt ~ ~ ~
 execute as @a[scores={lightning_rush_counter=..0}] run gamemode survival @s
-execute as @a[scores={lightning_rush_counter=..-45}] run effect clear @s resistance
-execute as @a[scores={lightning_rush_counter=..0}] run effect clear @s speed
-execute as @a[scores={lightning_rush_counter=..0}] run item replace entity @s player.cursor with air
 execute as @a[scores={lightning_rush_counter=..0}] run scoreboard players reset @s lightning_rush_counter
