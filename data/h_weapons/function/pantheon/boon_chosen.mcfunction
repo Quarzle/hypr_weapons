@@ -35,3 +35,9 @@ execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s inter
 execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s interaction at @s run particle totem_of_undying ~ ~ ~ 0.3 0.3 0.3 0.1 32
 execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s interaction at @s run tag @e[distance=..12,type=marker,tag=used] remove used
 execute as @e[type=interaction,tag=boon_choice,tag=zeus] if data entity @s interaction at @s run kill @e[distance=..12,tag=boon_choice]
+
+execute as @e[type=interaction,tag=boon_choice,tag=ares] if data entity @s interaction at @s positioned ~-2.5 ~-1 ~2.5 run function h_weapons:effects/flash
+execute as @e[type=interaction,tag=boon_choice,tag=ares] if data entity @s interaction at @s run loot spawn ~ ~ ~ loot h_weapons:pantheon/ares
+execute as @e[type=interaction,tag=boon_choice,tag=ares] if data entity @s interaction at @s run particle minecraft:crimson_spore ~ ~ ~ 0.3 0.3 0.3 0.1 128
+execute as @e[type=interaction,tag=boon_choice,tag=ares] if data entity @s interaction at @s run tag @e[distance=..12,type=marker,tag=used] remove used
+execute as @e[type=interaction,tag=boon_choice,tag=ares] if data entity @s interaction at @s run kill @e[distance=..12,tag=boon_choice]

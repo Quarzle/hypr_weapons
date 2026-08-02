@@ -18,3 +18,6 @@ summon minecraft:interaction ~2.5 ~ ~2.5 {Tags:["boon_choice","apollo"],width:1.
 
 summon minecraft:text_display ~2.5 ~ ~-2.5 {Tags:["boon_choice","zeus"],text:[{"text":"Receive a boon\nof Zeus"},{"atlas":"minecraft:gui","sprite":"toast/right_click"}],billboard:"center"}
 summon minecraft:interaction ~2.5 ~ ~-2.5 {Tags:["boon_choice","zeus"],width:1.75f,height:0.8f}
+
+summon minecraft:text_display ~-2.5 ~ ~2.5 {Tags:["boon_choice","ares"],text:[{"text":"Receive a boon\nof Ares"},{"atlas":"minecraft:gui","sprite":"toast/right_click"}],billboard:"center"}
+summon minecraft:interaction ~-2.5 ~ ~2.5 {Tags:["boon_choice","ares"],width:1.75f,height:0.8f}

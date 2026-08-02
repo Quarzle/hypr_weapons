@@ -1,0 +1,276 @@
+{
+  "type": "minecraft:gift",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": {
+            "pools": [
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_helmet",
+                    "weight": 1,
+                    "quality": 1,
+                    "conditions": [],
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:item_name": {
+                            "text": "Ares' Helmet",
+                            "color": "red"
+                          },
+                          "minecraft:unbreakable": {},
+                          "minecraft:attribute_modifiers": [
+                            {
+                              "type": "minecraft:armor",
+                              "id": "rgsfsdffs",
+                              "amount": 5,
+                              "operation": "add_value",
+                              "slot": "armor"
+                            },
+                            {
+                              "type": "minecraft:attack_speed",
+                              "id": "afsdnobuiedr",
+                              "amount": 0.1,
+                              "operation": "add_value",
+                              "slot": "armor"
+                            }
+                          ],
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:silence"
+                          },
+                          "minecraft:tooltip_display": {
+                            "hidden_components": [
+                              "minecraft:trim"
+                            ]
+                          },
+                          "minecraft:enchantment_glint_override": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_chestplate",
+                    "weight": 1,
+                    "quality": 1,
+                    "conditions": [],
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:item_name": {
+                            "text": "Ares' Chestplate",
+                            "color": "red"
+                          },
+                          "minecraft:unbreakable": {},
+                          "minecraft:attribute_modifiers": [
+                            {
+                              "type": "minecraft:armor",
+                              "id": "7iudtgbft",
+                              "amount": 9,
+                              "operation": "add_value",
+                              "slot": "armor"
+                            },
+                            {
+                              "type": "minecraft:attack_speed",
+                              "id": "gvrwrsghvsd",
+                              "amount": 0.1,
+                              "operation": "add_value",
+                              "slot": "armor"
+                            }
+                          ],
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:silence"
+                          },
+                          "minecraft:tooltip_display": {
+                            "hidden_components": [
+                              "minecraft:trim"
+                            ]
+                          },
+                          "minecraft:enchantment_glint_override": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+			  {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_leggings",
+                    "weight": 1,
+                    "quality": 1,
+                    "conditions": [],
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:item_name": {
+                            "text": "Ares' Leggings",
+                            "color": "red"
+                          },
+                          "minecraft:unbreakable": {},
+                          "minecraft:attribute_modifiers": [
+                            {
+                              "type": "minecraft:armor",
+                              "id": "jsartyf",
+                              "amount": 7,
+                              "operation": "add_value",
+                              "slot": "armor"
+                            },
+                            {
+                              "type": "minecraft:attack_speed",
+                              "id": "nsdrgysdgf",
+                              "amount": 0.1,
+                              "operation": "add_value",
+                              "slot": "armor"
+                            }
+                          ],
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:silence"
+                          },
+                          "minecraft:tooltip_display": {
+                            "hidden_components": [
+                              "minecraft:trim"
+                            ]
+                          },
+                          "minecraft:enchantment_glint_override": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+			  {
+                "rolls": 1,
+                "entries": [
+                  {
+                    "type": "minecraft:item",
+                    "name": "minecraft:golden_boots",
+                    "weight": 1,
+                    "quality": 1,
+                    "conditions": [],
+                    "functions": [
+                      {
+                        "function": "minecraft:set_components",
+                        "components": {
+                          "minecraft:item_name": {
+                            "text": "Ares' Boots",
+                            "color": "red"
+                          },
+                          "minecraft:unbreakable": {},
+                          "minecraft:attribute_modifiers": [
+                            {
+                              "type": "minecraft:armor",
+                              "id": "etdgrgywe",
+                              "amount": 5,
+                              "operation": "add_value",
+                              "slot": "armor"
+                            },
+                            {
+                              "type": "minecraft:attack_speed",
+                              "id": "shtzsagfgt",
+                              "amount": 0.1,
+                              "operation": "add_value",
+                              "slot": "armor"
+                            }
+                          ],
+                          "minecraft:trim": {
+                            "material": "minecraft:gold",
+                            "pattern": "minecraft:silence"
+                          },
+                          "minecraft:tooltip_display": {
+                            "hidden_components": [
+                              "minecraft:trim"
+                            ]
+                          },
+                          "minecraft:enchantment_glint_override": true
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          "weight": 1,
+          "quality": 1
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_spear",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:enchantments": {
+                  "minecraft:lunge": 5,
+                  "minecraft:sharpness": 5
+                },
+                "minecraft:item_name": "Hoplite Spear",
+                "minecraft:max_damage": 3000
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_sword",
+          "weight": 1,
+          "quality": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:item_name": {
+                  "text": "Violent Blade",
+                  "color": "red"
+                },
+                "minecraft:rarity": "rare",
+                "minecraft:enchantments": {
+                  "minecraft:sharpness": 5,
+                  "minecraft:smite": 5,
+                  "minecraft:impaling": 5,
+                  "minecraft:bane_of_arthropods": 5,
+                  "minecraft:breach": 3,
+                  "minecraft:sweeping_edge": 5
+                },
+                "minecraft:unbreakable": {},
+                "minecraft:blocks_attacks": {
+                  "block_delay_seconds": 0.1,
+                  "disable_cooldown_scale": 1,
+                  "item_damage": {
+                    "threshold": 2,
+                    "base": 1,
+                    "factor": 1
+                  },
+                  "block_sound": "minecraft:entity.armadillo.brush",
+                  "bypassed_by": "#minecraft:bypasses_shield"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
