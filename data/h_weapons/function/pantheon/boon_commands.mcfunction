@@ -24,7 +24,7 @@ execute as @a[scores={bow_shot=1..}] if items entity @s weapon.mainhand minecraf
 
 execute as @a[scores={bow_shot=1..}] run scoreboard players set @s bow_shot 0
 
-execute as @e[type=#minecraft:arrows,tag=arrow_homing,scores={arrow_age=5..}] at @s facing entity @n[scores={homing_immunity=..0},distance=..20,type=!mannequin,type=!#minecraft:arrows,type=!item,type=!item_frame,type=!glow_item_frame,type=!text_display,type=!minecraft:marker,type=!minecraft:block_display,type=!minecraft:experience_orb] eyes run function h_weapons:pantheon/apply_forward_motion_entity
+execute as @e[type=#minecraft:arrows,tag=arrow_homing,scores={arrow_age=5..}] at @s facing entity @n[scores={homing_immunity=..0},distance=..20,type=!#h_weapons:nonliving] eyes run function h_weapons:pantheon/apply_forward_motion_entity
 execute as @e[type=#minecraft:arrows,tag=arrow_homing,nbt={inGround:1b}] run tag @s remove arrow_homing 
 
 # sun tunic

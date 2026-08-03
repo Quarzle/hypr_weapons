@@ -1,0 +1,9 @@
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[6]}] run title @s actionbar [{"text":"\uF82B\uF82A\uF825\uF82B\uF82A\uF825\uF82B\uF827\uF822"},{"text":"\uE036"}]
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[5]}] run title @s actionbar [{"text":"\uF82B\uF82A\uF825\uF82B\uF82A\uF825\uF82B\uF827\uF822"},{"text":"\uE035"}]
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[4]}] run title @s actionbar [{"text":"\uF82B\uF82A\uF825\uF82B\uF82A\uF825\uF82B\uF827\uF822"},{"text":"\uE034"}]
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[3]}] run title @s actionbar [{"text":"\uF82B\uF82A\uF825\uF82B\uF82A\uF825\uF82B\uF827\uF822"},{"text":"\uE033"}]
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[2]}] run title @s actionbar [{"text":"\uF82B\uF82A\uF825\uF82B\uF82A\uF825\uF82B\uF827\uF822"},{"text":"\uE032"}]
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[1]}] run title @s actionbar [{"text":"\uF82B\uF82A\uF825\uF82B\uF82A\uF825\uF82B\uF827\uF822"},{"text":"\uE031"}]
+execute if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[0]}] run title @s actionbar [{"text":"\uF82B\uF82A\uF825\uF82B\uF82A\uF825\uF82B\uF827\uF822"},{"text":"\uE030"}]
+
+# title @s actionbar [{"text":"\uF82B\uF82A\uF825"},{"text":"\uE003\uF802\uE000\uF802\uE000\uF802\uE000\uF802\uE000\uF802\uE000\uF802\uE000\uF802\uE000\uF802\uE000\uF802\uE004"}]

@@ -1,0 +1,32 @@
+scoreboard players remove @s shot_cooldown 1
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[6]}] run tag @s add fired_revolver
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[5]}] run tag @s add fired_revolver
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[4]}] run tag @s add fired_revolver
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[3]}] run tag @s add fired_revolver
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[2]}] run tag @s add fired_revolver
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[1]}] run tag @s add fired_revolver
+
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[1]}] run playsound block.tripwire.click_off ui @s ~ ~ ~ 1 0.7
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[1]}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={floats:[0]},item_name="Revolver",custom_data={"hypr-item":"revolver"},rarity="epic",item_model="revolver",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},lore=[{text:"0/6 Ammo left"}]] 1
+
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[2]}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={floats:[1]},item_name="Revolver",custom_data={"hypr-item":"revolver"},rarity="epic",item_model="revolver",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},lore=[{text:"1/6 Ammo left"}]] 1
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[3]}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={floats:[2]},item_name="Revolver",custom_data={"hypr-item":"revolver"},rarity="epic",item_model="revolver",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},lore=[{text:"2/6 Ammo left"}]] 1
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[4]}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={floats:[3]},item_name="Revolver",custom_data={"hypr-item":"revolver"},rarity="epic",item_model="revolver",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},lore=[{text:"3/6 Ammo left"}]] 1
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[5]}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={floats:[4]},item_name="Revolver",custom_data={"hypr-item":"revolver"},rarity="epic",item_model="revolver",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},lore=[{text:"4/6 Ammo left"}]] 1
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[6]}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={floats:[5]},item_name="Revolver",custom_data={"hypr-item":"revolver"},rarity="epic",item_model="revolver",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},lore=[{text:"5/6 Ammo left"}]] 1
+
+execute as @s[tag=fired_revolver] at @s anchored eyes run function h_weapons:revolver/revolver_fire
+
+
+execute as @s[tag=!fired_revolver] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[0]}] run playsound ui.button.click ui @s ~ ~ ~ 1 1.5
+execute as @s[tag=!fired_revolver] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[0]}] run item replace entity @s weapon.mainhand with carrot_on_a_stick[custom_model_data={floats:[6]},item_name="Revolver",custom_data={"hypr-item":"revolver"},rarity="epic",item_model="revolver",unbreakable={},tooltip_display={hidden_components:["unbreakable"]},lore=[{text:"6/6 Ammo left"}]] 1
+# execute as @s[tag=!fired_revolver] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[0]}] run scoreboard players set @s shot_cooldown 10
+execute as @s[tag=!was_right_clicking,tag=right_clicking,tag=!fired_revolver] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[0]}] run tag @s add fired_revolver
+
+execute as @s[tag=!was_right_clicking,tag=right_clicking,tag=fired_revolver] if score @s shot_cooldown matches ..0 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[0]}] run scoreboard players set @s shot_cooldown 28
+execute as @s[tag=!was_right_clicking,tag=right_clicking,tag=fired_revolver] if score @s shot_cooldown matches 28 if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_model_data={floats:[0]}] if items entity @s armor.head minecraft:echo_shard[custom_data={"hypr-item":"hat"}] run scoreboard players set @s shot_cooldown 14
+
+
+execute as @s[tag=!was_right_clicking,tag=right_clicking] if score @s shot_cooldown matches ..0 run scoreboard players set @s shot_cooldown 12
+
+tag @s[tag=fired_revolver] remove fired_revolver

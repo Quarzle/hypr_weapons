@@ -16,6 +16,9 @@ execute as @a[scores={right_clicked=1..}] run scoreboard players set @s right_cl
 execute as @a[scores={spell_cooldown=..0}] at @s if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={"hypr-item":"staff","mode":"select"}] run function h_weapons:staff/select_mode
 execute as @a at @s if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={"hypr-item":"staff","mode":"fire"}] run function h_weapons:staff/fire_mode
 
+execute as @a at @s if items entity @s weapon.mainhand minecraft:carrot_on_a_stick[custom_data={"hypr-item":"revolver"}] run function h_weapons:revolver/revolver_tick
+
+
 scoreboard players remove @a spell_cooldown 1
 
 execute as @a at @s run tag @e[type=text_display,distance=..5,tag=temp_staff] add safe

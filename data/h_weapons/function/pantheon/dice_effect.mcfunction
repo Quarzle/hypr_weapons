@@ -9,16 +9,16 @@ execute if data storage h_weapons:dice {roll:2} run tellraw @s {text: "You rolle
 execute if data storage h_weapons:dice {roll:2} run effect give @s slowness 120 127 true
 
 execute if data storage h_weapons:dice {roll:3} run tellraw @s {text: "You rolled a 3.",color:"green"}
-execute if data storage h_weapons:dice {roll:3} run effect give @s night_vision infinite 0 true
+execute if data storage h_weapons:dice {roll:3} run effect give @s night_vision 3600 0 true
 
 execute if data storage h_weapons:dice {roll:4} run tellraw @s {text: "You rolled a 4.",color:"aqua"}
-execute if data storage h_weapons:dice {roll:4} run effect give @s absorption infinite 0 true
+execute if data storage h_weapons:dice {roll:4} run effect give @s absorption 3600 0 true
 
 execute if data storage h_weapons:dice {roll:5} run tellraw @s {text: "You rolled a 5!",color:"gold"}
-execute if data storage h_weapons:dice {roll:5} run effect give @s health_boost infinite 0 true
+execute if data storage h_weapons:dice {roll:5} run effect give @s health_boost 3600 0 true
 
 execute if data storage h_weapons:dice {roll:6} run tellraw @s {text: "You rolled a 6!",color:"dark_purple"}
-execute if data storage h_weapons:dice {roll:6} run effect give @s saturation infinite 0 true
+execute if data storage h_weapons:dice {roll:6} run effect give @s saturation 3600 0 true
 
 
 # Give back the item as it was consumed

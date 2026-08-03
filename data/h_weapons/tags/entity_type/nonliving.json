@@ -1,8 +1,13 @@
 {
   "replace": false,
   "values": [
-	"#minecraft:arrows",
-	"#minecraft:falling_blocks",
+	"#impact_projectiles",
+	"falling_block",
+	"firework_rocket",
+	"fishing_bobber",
+	"lingering_potion",
+	"splash_potion",
+	"area_effect_cloud",
 	"minecraft:experience_orb",
 	"minecraft:marker",
 	"minecraft:item",
@@ -11,7 +16,6 @@
 	"minecraft:text_display",
 	"minecraft:block_display",
 	"minecraft:item_display",
-	"minecraft:area_effect_cloud",
 	"minecraft:mannequin"
   ]
 }

@@ -1,4 +1,14 @@
 # Custom logic
+teleport 0 0 0
+teleport ~ ~ ~
+
+scoreboard players set $x player_motion.api.launch 0
+scoreboard players set $y player_motion.api.launch 1500
+scoreboard players set $z player_motion.api.launch 0
+function player_motion:api/launch_xyz
+scoreboard players set $strength player_motion.api.launch -4000
+function player_motion:api/launch_looking
+
 scoreboard players set %blocks_traversed variable 0
 execute anchored eyes positioned ^ ^ ^1.5 as @s run function h_weapons:gauntlet_raycast
 summon minecraft:area_effect_cloud ~ ~0.5 ~ {Tags:["gauntlet_fire"],Duration:5,Radius:0.5f,Color:16711680}

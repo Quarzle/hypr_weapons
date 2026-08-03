@@ -84,6 +84,55 @@
             "height": 13,
             "chars": ["\uE020"]
         },
+		{
+            "type": "bitmap",
+            "file": "minecraft:custom/cylinder_empty.png",
+            "ascent": 0,
+            "height": 64,
+            "chars": ["\uE030"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:custom/cylinder_1.png",
+            "ascent": 0,
+            "height": 64,
+            "chars": ["\uE031"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:custom/cylinder_2.png",
+            "ascent": 0,
+            "height": 64,
+            "chars": ["\uE032"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:custom/cylinder_3.png",
+            "ascent": 0,
+            "height": 64,
+            "chars": ["\uE033"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:custom/cylinder_4.png",
+            "ascent": 0,
+            "height": 64,
+            "chars": ["\uE034"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:custom/cylinder_5.png",
+            "ascent": 0,
+            "height": 64,
+            "chars": ["\uE035"]
+        },
+		{
+            "type": "bitmap",
+            "file": "minecraft:custom/cylinder_full.png",
+            "ascent": 0,
+            "height": 64,
+            "chars": ["\uE036"]
+        },
         {
             "type": "bitmap",
             "file": "space:font/space_split.png",
